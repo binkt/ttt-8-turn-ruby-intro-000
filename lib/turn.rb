@@ -29,3 +29,7 @@ end
 def input_to_index(users_move)
   return users_move.to_i - 1
 end
+
+def turn
+end
+
