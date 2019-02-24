@@ -39,5 +39,6 @@ def turn(board)
     user_input = input_to_index(gets.chomp)
   else
     move(board, user_input, token)
+    display_board(board)
   end
 end
