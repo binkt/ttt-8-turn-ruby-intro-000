@@ -37,6 +37,6 @@ def turn(board)
     puts "Invalid Move, Please enter again."
     user_input = input_to_index(gets.chomp)
   else
-    move(board, user_input, token)
+    move(board, user_input)
   end
 end
