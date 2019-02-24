@@ -31,4 +31,5 @@ def input_to_index(users_move)
 end
 
 def turn
+  puts "Please enter 1-9:"
 end
