@@ -1,14 +1,15 @@
 #!/usr/bin/env ruby
+
 require_relative '../lib/turn'
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-puts "Please enter 1-9:"
-user_input = input_to_index(gets.chomp)
-if valid_move?(board, user_input) == false
-  puts "bad move bitch, try again"
-else
-  token = "X"
-  move(board, user_input, token)
-  display_board(board)
-end
+puts "Welcome to Tic Tac Toe!"
+
+move(board, 4, "X")
+move(board, 0, "O")
+move(board, 1, "X")
+
+display_board(board)
+
+turn(board)
