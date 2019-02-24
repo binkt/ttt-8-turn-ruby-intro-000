@@ -30,7 +30,7 @@ def input_to_index(users_move)
   return users_move.to_i - 1
 end
 
-def turn
+def turn(board)
   puts "Please enter 1-9:"
   user_input = input_to_index(gets.chomp)
 end
